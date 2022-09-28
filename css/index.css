@@ -89,12 +89,12 @@ body {
     padding: 3px;
     margin: 0;
 }
-#name:hover ~ .menuitem{
+#name:active ~ .menuitem{
     opacity: 1;
     visibility: visible;
     transition: opacity 0.1s, visibility 0.1s;
 }
-#name:not(:hover) ~ .menuitem{
+#name:not(:active) ~ .menuitem{
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.1s, visibility 0.1s;
