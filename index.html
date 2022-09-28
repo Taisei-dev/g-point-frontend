@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-stype" content="black-translucent">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="stylesheet" href="css/index.css">
+    <title>G-Point Reader</title>
+</head>
+<body>
+    <div class="videofield">
+        <video id="js-video" autoplay playsinline></video>
+        <canvas id="js-canvas"></canvas>
+        <svg class="scan-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 472.6 472.6">
+            <path d="M23.6,106.3c0,6.5-5.3,11.8-11.8,11.8S0,112.9,0,106.3V59.1C0,26.4,26.4,0,59.1,0h47.3c6.5,0,11.8,5.3,11.8,11.8s-5.3,11.8-11.8,11.8H59.1c-19.6,0-35.4,15.9-35.4,35.4V106.3z M366.2,23.6c-6.5,0-11.8-5.3-11.8-11.8S359.7,0,366.2,0h47.3c32.6,0,59.1,26.4,59.1,59.1v47.3c0,6.5-5.3,11.8-11.8,11.8s-11.8-5.3-11.8-11.8V59.1c0-19.6-15.9-35.4-35.4-35.4H366.2z M106.3,448.9c6.5,0,11.8,5.3,11.8,11.8s-5.3,11.8-11.8,11.8H59.1C26.4,472.6,0,446.1,0,413.5v-47.3c0-6.5,5.3-11.8,11.8-11.8s11.8,5.3,11.8,11.8v47.3c0,19.6,15.9,35.4,35.4,35.4H106.3z M448.9,366.2c0-6.5,5.3-11.8,11.8-11.8s11.8,5.3,11.8,11.8v47.3c0,32.6-26.4,59.1-59.1,59.1h-47.3c-6.5,0-11.8-5.3-11.8-11.8s5.3-11.8,11.8-11.8h47.3c19.6,0,35.4-15.9,35.4-35.4V366.2z"></path>
+        </svg>
+    </div>
+    <div class="menu">
+        <span id="name" tabindex="0"></span>
+        <ul class="menuitem">
+            <li>カメラ切り替え</li>
+            <li>ログアウト</li>
+        </ul>
+    </div>
+
+    <section class="dialog-window" id="detail">
+        <article class="dialog-inner">
+            <header class="dialogtitle">ポイント詳細</header>
+            <main>
+                <table class="pointinfo">
+                    <caption>ポイント推移</caption>
+                    <tr>
+                        <td id="beforepoint">100</td><td id="pluspoint">100</td><td id="nowpoint">200</td>
+                    </tr>
+                </table>
+                <table class="history">
+                    <caption>獲得履歴</caption>
+                    <tr>
+                        <th>時間</th><th>場所</th><th>ポイント</th>
+                    </tr>
+                </table>
+            </main>
+            <footer id="message"></footer>
+        </article>
+        <a href="#!" class="dialog-close"></a>
+    </section>
+
+    <script type="text/javascript">
+        var roomname="hoge";
+    </script>
+    <script type="text/javascript" src="js/qr/jsQR.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+</body>
+</html>
